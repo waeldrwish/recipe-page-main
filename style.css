@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Yang";
+  src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --Brown-800: hsl(14, 45%, 36%);
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-400: hsl(330, 100%, 98%);
+}
+
+body {
+  background-color: var(--Stone-150);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", serif;
+  line-height: 1.5;
+  color: var(--Stone-600);
+}
+
+h1 {
+  font-family: "Yang", sans-serif;
+  font-weight: 400;
+  color: var(--Stone-900);
+}
+
+h4 {
+  font-family: "Yang", sans-serif;
+  font-weight: 400;
+  color: var(--Brown-800);
+  font-size: 20px;
+}
+.resipice {
+  width: 50%;
+  position: relative;
+  padding: 20px;
+  background-color: var(--White);
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.resipice img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.preparation {
+  margin-top: 20px;
+  padding: 5px 20px;
+  background-color: var(--Rose-400);
+  border-radius: 10px;
+}
+
+.preparation h4 {
+  color: var(--Rose-800);
+}
+
+ul li {
+    margin: 10px;
+}
+.instructions ol li {
+    margin: 10px;
+}
+
+table {
+    width: 100%; /* Make the table take up the full width, if desired */
+    border-collapse: collapse; /* Ensures borders don't double up */
+}
+
+tr {
+    border-bottom: 1px solid var(--Stone-600); /* Adds a 1px solid black border to the bottom of each row */
+}
+
+tr td {
+    padding: 10px;
+}
+
+tr:last-child {
+    border-bottom: none; /* Removes the border from the last row, if you don't want it there */
+}
+
+@media (max-width: 375px) {
+  /* Styles for small devices (landscape phones, 576px and up) */
+  .resipice {
+    width: 100%;
+    border-radius: 0;
+  }
+  .resipice img {
+    border-radius: 0;
+  }
+}
